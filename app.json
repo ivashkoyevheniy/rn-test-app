@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.yevheniy.ivashko.rntestapp"
     },
     "web": {
       "bundler": "metro",
@@ -28,6 +29,11 @@
     },
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "29e1c5b5-10a2-4220-9e88-500dac6e7e47"
+      }
     }
   }
 }

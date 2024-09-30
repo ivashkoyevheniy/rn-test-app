@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import {
   Button,
   FlatList,
@@ -94,7 +94,12 @@ const ProductList: React.FC = () => {
     );
   };
 
-  const renderItem = ({ item }: { item: ItemData }) => <Item item={item} />;
+  const renderItem = useMemo(
+    () =>
+      ({ item }: { item: ItemData }) =>
+        <Item item={item} />,
+    products
+  );
 
   return (
     <SafeAreaView style={styles.container}>
